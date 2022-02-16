@@ -1,0 +1,17 @@
+modLoader="javafml"
+loaderVersion="[39,)"
+license="All rights reserved"
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+
+[[mods]]
+modId="coppercomplement"
+version="${file.jarVersion}"
+displayName="Copper Complement"
+#updateJSONURL="https://change.me.example.invalid/updates.json"
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+#logoFile="examplemod.png" #optional
+#credits="Thanks for this example mod goes to Java"
+authors="Tezemi"
+description='''
+Adds additional uses for copper, along with new tin ore, which can be used to make bronze.
+'''

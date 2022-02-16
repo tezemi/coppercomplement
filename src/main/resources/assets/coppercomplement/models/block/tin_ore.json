@@ -1,0 +1,7 @@
+{
+	"parent": "block/cube_all",
+	"textures": 
+    {
+		"all": "coppercomplement:blocks/tin_ore"
+	}
+}
