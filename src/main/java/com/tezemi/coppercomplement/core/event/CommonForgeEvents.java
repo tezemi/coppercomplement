@@ -3,6 +3,7 @@ package com.tezemi.coppercomplement.core.event;
 import java.util.List;
 import java.util.function.Supplier;
 
+import com.tezemi.coppercomplement.CopperComplement;
 import com.tezemi.coppercomplement.core.world.OreGeneration;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.MobCategory;
@@ -17,6 +18,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 
+@Mod.EventBusSubscriber(modid = CopperComplement.MODID, bus = Bus.FORGE)
 public class CommonForgeEvents
 {
     @SubscribeEvent(priority = EventPriority.HIGHEST)
