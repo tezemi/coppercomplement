@@ -1,3 +1,7 @@
 {
-  "block.coppercomplement.tin_ore": "Tin Ore"
+  "block.coppercomplement.tin_ore": "Tin Ore",
+  "item.coppercomplement.raw_tin": "Raw Tin",
+  "item.coppercomplement.tin_ingot": "Tin Ingot",
+
+  "item.coppercomplement.bronze_ingot": "Bronze Ingot"
 }
