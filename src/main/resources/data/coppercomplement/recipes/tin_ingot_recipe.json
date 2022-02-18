@@ -1,8 +1,7 @@
 {
     "type": "minecraft:smelting",
     "ingredient": {
-        "item": "coppercomplement:raw_tin",
-        "item": "coppercomplement:tin_ore"
+        "item": "coppercomplement:raw_tin"
     },
     "result": "coppercomplement:tin_ingot",
     "experience": 0.7,

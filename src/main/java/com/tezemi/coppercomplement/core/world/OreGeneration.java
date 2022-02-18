@@ -44,7 +44,7 @@ public class OreGeneration
         final var placedTinOre = PlacementUtils.register
         (
             "tin_ore",
-            tinOre.placed(commonOrePlacement(5, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(80))))
+            tinOre.placed(commonOrePlacement(100, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(80))))
         );
         OVERWORLD_ORES.add(placedTinOre);
     }

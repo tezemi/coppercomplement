@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "c c"
+  ],
+  "key": {
+    "c": {
+      "item": "coppercomplement:bronze_ingot"
+    }
+  },
+  "result": {
+    "item": "coppercomplement:bronze_helmet",
+    "count": 1
+  }
+}

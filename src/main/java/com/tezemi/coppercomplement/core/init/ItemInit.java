@@ -2,6 +2,7 @@ package com.tezemi.coppercomplement.core.init;
 
 
 import com.tezemi.coppercomplement.CopperComplement;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,7 +25,6 @@ public final class ItemInit
         () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS))
     );
 
-
     public static final RegistryObject<Item> TIN_INGOT_ITEM = ITEMS.register
     (
         "tin_ingot",
@@ -34,8 +34,14 @@ public final class ItemInit
     // Bronze Items
     public static final RegistryObject<Item> BRONZE_INGOT_ITEM = ITEMS.register
     (
-            "bronze_ingot",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS))
+        "bronze_ingot",
+        () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS))
+    );
+
+    public static final RegistryObject<Item> BRONZE_HELMET_ITEM = ITEMS.register
+    (
+        "bronze_helmet",
+        () -> new ArmorItem(ArmorMaterialInit.BRONZE_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
     );
 
     private ItemInit()
