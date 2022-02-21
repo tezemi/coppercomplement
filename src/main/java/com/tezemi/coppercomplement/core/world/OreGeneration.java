@@ -35,18 +35,31 @@ public class OreGeneration
 
     public static final RuleTest END_TEST = new BlockMatchTest(Blocks.END_STONE);
 
+    private static final int TIN_ORE_PLACEMENT_FREQUENCY = 5;
+
     public static void registerOres() {
 
-        var oreConfig = new OreConfiguration(List.of(OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, BlockInit.TIN_ORE.get().defaultBlockState())), 11);
+        var oreConfig = new OreConfiguration(List.of
+        (
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, BlockInit.TIN_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, BlockInit.DEEPSLATE_TIN_ORE.get().defaultBlockState())
+        ), 8);
 
         final var tinOre = FeatureUtils.register("tin_ore", Feature.ORE.configured(oreConfig));
-
         final var placedTinOre = PlacementUtils.register
         (
             "tin_ore",
-            tinOre.placed(commonOrePlacement(100, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(80))))
+            tinOre.placed(commonOrePlacement(TIN_ORE_PLACEMENT_FREQUENCY, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(100))))
         );
         OVERWORLD_ORES.add(placedTinOre);
+
+        final var dTinOre = FeatureUtils.register("deepslate_tin_ore", Feature.ORE.configured(oreConfig));
+        final var dPlacedTinOre = PlacementUtils.register
+        (
+                "deepslate_tin_ore",
+                dTinOre.placed(commonOrePlacement(TIN_ORE_PLACEMENT_FREQUENCY, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(100))))
+        );
+        OVERWORLD_ORES.add(dPlacedTinOre);
     }
 
     private static List<PlacementModifier> orePlacement(PlacementModifier placementMod1, PlacementModifier placementMod2)

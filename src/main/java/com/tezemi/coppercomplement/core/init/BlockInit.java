@@ -21,6 +21,12 @@ public final class BlockInit
         () -> new OreBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE))
     );
 
+    public static final RegistryObject<Block> DEEPSLATE_TIN_ORE = BLOCKS.register
+    (
+        "deepslate_tin_ore",
+        () -> new OreBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE))
+    );
+
     private BlockInit()
     {
 

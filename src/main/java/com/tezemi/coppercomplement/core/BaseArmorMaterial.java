@@ -2,6 +2,7 @@ package com.tezemi.coppercomplement.core;
 
 import java.util.function.Supplier;
 
+import com.tezemi.coppercomplement.CopperComplement;
 import com.tezemi.coppercomplement.core.init.ItemInit;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -13,11 +14,10 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 public enum BaseArmorMaterial implements ArmorMaterial
 {
-    BRONZE("bronze", 33, new int[]{1, 4, 5, 2}, 20, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () ->
+    BRONZE(CopperComplement.MODID + ":bronze", 33, new int[]{1, 4, 5, 2}, 20, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () ->
     {
         return Ingredient.of(ItemInit.BRONZE_INGOT_ITEM.get());
     });
-
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;

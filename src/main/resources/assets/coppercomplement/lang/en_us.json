@@ -1,8 +1,12 @@
 {
   "block.coppercomplement.tin_ore": "Tin Ore",
+  "block.coppercomplement.deepslate_tin_ore": "Deepslate Tin Ore",
   "item.coppercomplement.raw_tin": "Raw Tin",
   "item.coppercomplement.tin_ingot": "Tin Ingot",
 
   "item.coppercomplement.bronze_ingot": "Bronze Ingot",
-  "item.coppercomplement.bronze_helmet": "Bronze Helmet"
+  "item.coppercomplement.bronze_helmet": "Bronze Helmet",
+  "item.coppercomplement.bronze_chestplate": "Bronze Chestplate",
+  "item.coppercomplement.bronze_leggings": "Bronze Leggings",
+  "item.coppercomplement.bronze_boots": "Bronze Boots"
 }

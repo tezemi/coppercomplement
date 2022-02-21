@@ -19,6 +19,12 @@ public final class ItemInit
         () -> new BlockItem(BlockInit.TIN_ORE.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS))
     );
 
+    public static final RegistryObject<BlockItem> DEEPSLATE_TIN_ORE_ITEM = ITEMS.register
+    (
+        "deepslate_tin_ore",
+        () -> new BlockItem(BlockInit.DEEPSLATE_TIN_ORE.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS))
+    );
+
     public static final RegistryObject<Item> RAW_TIN_ITEM = ITEMS.register
     (
         "raw_tin",
@@ -42,6 +48,24 @@ public final class ItemInit
     (
         "bronze_helmet",
         () -> new ArmorItem(ArmorMaterialInit.BRONZE_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+    );
+
+    public static final RegistryObject<Item> BRONZE_CHESTPLATE_ITEM = ITEMS.register
+    (
+        "bronze_chestplate",
+        () -> new ArmorItem(ArmorMaterialInit.BRONZE_ARMOR_MATERIAL, EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+    );
+
+    public static final RegistryObject<Item> BRONZE_LEGGINGS = ITEMS.register
+    (
+        "bronze_leggings",
+        () -> new ArmorItem(ArmorMaterialInit.BRONZE_ARMOR_MATERIAL, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+    );
+
+    public static final RegistryObject<Item> BRONZE_BOOTS = ITEMS.register
+    (
+        "bronze_boots",
+        () -> new ArmorItem(ArmorMaterialInit.BRONZE_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
     );
 
     private ItemInit()
