@@ -2,6 +2,7 @@ package com.tezemi.coppercomplement.core.init;
 
 
 import com.tezemi.coppercomplement.CopperComplement;
+import com.tezemi.coppercomplement.core.BaseToolMaterial;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,6 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 public final class ItemInit
 {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CopperComplement.MODID);
+    private static final float BASE_SWING_SPEED = -4f;
 
     // Tin Items
     public static final RegistryObject<BlockItem> TIN_ORE_ITEM = ITEMS.register
@@ -66,6 +68,36 @@ public final class ItemInit
     (
         "bronze_boots",
         () -> new ArmorItem(ArmorMaterialInit.BRONZE_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+    );
+
+    public static final RegistryObject<Item> BRONZE_SWORD = ITEMS.register
+    (
+        "bronze_sword",
+        () -> new SwordItem(BaseToolMaterial.BRONZE, 5, BASE_SWING_SPEED + 1.6f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))
+    );
+
+    public static final RegistryObject<Item> BRONZE_PICKAXE = ITEMS.register
+    (
+        "bronze_pickaxe",
+        () -> new PickaxeItem(BaseToolMaterial.BRONZE, 3, BASE_SWING_SPEED + 1.2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS))
+    );
+
+    public static final RegistryObject<Item> BRONZE_AXE = ITEMS.register
+    (
+        "bronze_axe",
+        () -> new AxeItem(BaseToolMaterial.BRONZE, 9f, BASE_SWING_SPEED + 0.8f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS))
+    );
+
+    public static final RegistryObject<Item> BRONZE_SHOVEL = ITEMS.register
+    (
+        "bronze_shovel",
+        () -> new ShovelItem(BaseToolMaterial.BRONZE, 3.5f, BASE_SWING_SPEED + 1f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS))
+    );
+
+    public static final RegistryObject<Item> BRONZE_HOE = ITEMS.register
+    (
+        "bronze_hoe",
+        () -> new HoeItem(BaseToolMaterial.BRONZE, 1, BASE_SWING_SPEED + 2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS))
     );
 
     private ItemInit()

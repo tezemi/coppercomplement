@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "c c",
+    "c c"
+  ],
+  "key": {
+    "c": {
+      "item": "coppercomplement:bronze_ingot"
+    }
+  },
+  "result": {
+    "item": "coppercomplement:bronze_leggings",
+    "count": 1
+  }
+}

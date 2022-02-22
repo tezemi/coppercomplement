@@ -8,5 +8,10 @@
   "item.coppercomplement.bronze_helmet": "Bronze Helmet",
   "item.coppercomplement.bronze_chestplate": "Bronze Chestplate",
   "item.coppercomplement.bronze_leggings": "Bronze Leggings",
-  "item.coppercomplement.bronze_boots": "Bronze Boots"
+  "item.coppercomplement.bronze_boots": "Bronze Boots",
+  "item.coppercomplement.bronze_sword": "Bronze Sword",
+  "item.coppercomplement.bronze_pickaxe": "Bronze Pickaxe",
+  "item.coppercomplement.bronze_axe": "Bronze Axe",
+  "item.coppercomplement.bronze_shovel": "Bronze Shovel",
+  "item.coppercomplement.bronze_hoe": "Bronze Hoe"
 }

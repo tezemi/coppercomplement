@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "i": {
+      "item": "coppercomplement:bronze_ingot"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "coppercomplement:bronze_sword",
+    "count": 1
+  }
+}

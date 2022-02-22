@@ -35,7 +35,7 @@ public class OreGeneration
 
     public static final RuleTest END_TEST = new BlockMatchTest(Blocks.END_STONE);
 
-    private static final int TIN_ORE_PLACEMENT_FREQUENCY = 5;
+    private static final int TIN_ORE_PLACEMENT_FREQUENCY = 1;
 
     public static void registerOres() {
 
@@ -49,7 +49,7 @@ public class OreGeneration
         final var placedTinOre = PlacementUtils.register
         (
             "tin_ore",
-            tinOre.placed(commonOrePlacement(TIN_ORE_PLACEMENT_FREQUENCY, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(100))))
+            tinOre.placed(commonOrePlacement(TIN_ORE_PLACEMENT_FREQUENCY, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(164))))
         );
         OVERWORLD_ORES.add(placedTinOre);
 
@@ -57,7 +57,7 @@ public class OreGeneration
         final var dPlacedTinOre = PlacementUtils.register
         (
                 "deepslate_tin_ore",
-                dTinOre.placed(commonOrePlacement(TIN_ORE_PLACEMENT_FREQUENCY, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(100))))
+                dTinOre.placed(commonOrePlacement(TIN_ORE_PLACEMENT_FREQUENCY, HeightRangePlacement.uniform(VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(164))))
         );
         OVERWORLD_ORES.add(dPlacedTinOre);
     }
