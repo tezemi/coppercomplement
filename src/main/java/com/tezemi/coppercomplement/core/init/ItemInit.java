@@ -3,6 +3,8 @@ package com.tezemi.coppercomplement.core.init;
 
 import com.tezemi.coppercomplement.CopperComplement;
 import com.tezemi.coppercomplement.core.BaseToolMaterial;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
@@ -37,6 +39,13 @@ public final class ItemInit
     (
         "tin_ingot",
         () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS))
+    );
+
+    // Copper Items
+    public static final RegistryObject<BlockItem> LOW_HEAT_FURNACE_ITEM = ITEMS.register
+    (
+        "low_heat_furnace",
+        () -> new BlockItem(BlockInit.LOW_HEAT_FURNACE.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS))
     );
 
     // Bronze Items
